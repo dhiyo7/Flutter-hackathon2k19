@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sosmed/beranda.dart';
 import 'package:sosmed/message.dart';
+import 'package:sosmed/profile.dart';
 import 'package:sosmed/search.dart';
 
 class Bottom extends StatefulWidget {
@@ -19,7 +20,7 @@ class _BottomState extends State<Bottom> {
             Beranda(),
             Search(),
             Message(),
-            Beranda(),
+            Profile(),
           ],
         ),
         bottomNavigationBar: TabBar(
