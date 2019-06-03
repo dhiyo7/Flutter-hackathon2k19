@@ -47,14 +47,14 @@ class _BerandaState extends State<Beranda> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.only(left: 10, right: 10, top: 10),
             child: InkWell(
               onTap: () {
                 Navigator.push(
                     context, MaterialPageRoute(builder: (context) => Status()));
               },
               child: Material(
-                elevation: 5,
+                elevation: 3,
                 borderRadius: BorderRadius.all(Radius.circular(10)),
                 color: Colors.white,
                 child: Padding(
@@ -89,7 +89,8 @@ class _BerandaState extends State<Beranda> {
               shrinkWrap: true,
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.only(
+                      left: 10, right: 10, top: 5, bottom: 5),
                   child: InkWell(
                     onTap: () {
                       Navigator.push(
@@ -98,7 +99,7 @@ class _BerandaState extends State<Beranda> {
                               builder: (context) => DetailPost()));
                     },
                     child: Material(
-                      elevation: 5.0,
+                      elevation: 3,
                       borderRadius: BorderRadius.circular(5),
                       child: Padding(
                         padding: const EdgeInsets.all(15.0),
@@ -223,247 +224,263 @@ class _BerandaState extends State<Beranda> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Material(
-                    elevation: 5.0,
-                    borderRadius: BorderRadius.circular(5),
-                    child: Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: Column(
-                        children: <Widget>[
-                          Row(children: <Widget>[
-                            Image.asset(
-                              "assets/usericon.png",
-                              height: 40,
-                              width: 40,
+                  padding: const EdgeInsets.only(
+                      left: 10, right: 10, top: 5, bottom: 5),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => DetailPost()));
+                    },
+                    child: Material(
+                      elevation: 3,
+                      borderRadius: BorderRadius.circular(5),
+                      child: Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Column(
+                          children: <Widget>[
+                            Row(children: <Widget>[
+                              Image.asset(
+                                "assets/usericon.png",
+                                height: 40,
+                                width: 40,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(left: 10),
+                                child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text(
+                                        "Dhiyo Reksa",
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text("1 min ago")
+                                    ]),
+                              ),
+                              Spacer(),
+                              Icon(
+                                Icons.bookmark,
+                                color: Colors.grey[400],
+                              ),
+                            ]),
+                            Padding(
+                              padding: EdgeInsets.only(top: 10),
+                              child: Image.asset("assets/flutter.png"),
                             ),
                             Padding(
-                              padding: EdgeInsets.only(left: 10),
-                              child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Text(
-                                      "Dhiyo Reksa",
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.bold,
-                                      ),
+                              padding: EdgeInsets.only(top: 10),
+                              child: Row(children: <Widget>[
+                                Icon(
+                                  Icons.favorite,
+                                  size: 20,
+                                  color: Colors.red,
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 5),
+                                  child: Text(
+                                    "125",
+                                    style: TextStyle(
+                                      color: Colors.grey,
                                     ),
-                                    Text("1 min ago")
-                                  ]),
+                                  ),
+                                ),
+                                Spacer(),
+                                Text(
+                                  "4 comments",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 10),
+                                  child: Text(
+                                    "2 shares",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ),
+                              ]),
                             ),
-                            Spacer(),
-                            Icon(
-                              Icons.bookmark,
-                              color: Colors.grey[400],
+                            Divider(
+                              height: 20.0,
+                              color: Colors.grey,
                             ),
-                          ]),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10),
-                            child: Image.asset("assets/flutter.png"),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10),
-                            child: Row(children: <Widget>[
+                            Row(children: <Widget>[
                               Icon(
                                 Icons.favorite,
+                                color: Colors.grey[400],
                                 size: 20,
-                                color: Colors.red,
                               ),
                               Padding(
                                 padding: EdgeInsets.only(left: 5),
                                 child: Text(
-                                  "125",
-                                  style: TextStyle(
-                                    color: Colors.grey,
-                                  ),
+                                  "Likes",
+                                  style: TextStyle(color: Colors.grey),
                                 ),
                               ),
                               Spacer(),
-                              Text(
-                                "4 comments",
-                                style: TextStyle(color: Colors.grey),
+                              Icon(
+                                Icons.add_comment,
+                                color: Colors.grey[400],
+                                size: 20,
                               ),
                               Padding(
-                                padding: EdgeInsets.only(left: 10),
+                                padding: EdgeInsets.only(left: 5),
                                 child: Text(
-                                  "2 shares",
-                                  style: TextStyle(
-                                    color: Colors.grey,
-                                  ),
+                                  "Comments",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
+                              ),
+                              Spacer(),
+                              Icon(
+                                Icons.share,
+                                color: Colors.grey[400],
+                                size: 20,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(left: 5),
+                                child: Text(
+                                  "Shares",
+                                  style: TextStyle(color: Colors.grey),
                                 ),
                               ),
                             ]),
-                          ),
-                          Divider(
-                            height: 20.0,
-                            color: Colors.grey,
-                          ),
-                          Row(children: <Widget>[
-                            Icon(
-                              Icons.favorite,
-                              color: Colors.grey[400],
-                              size: 20,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(left: 5),
-                              child: Text(
-                                "Likes",
-                                style: TextStyle(color: Colors.grey),
-                              ),
-                            ),
-                            Spacer(),
-                            Icon(
-                              Icons.add_comment,
-                              color: Colors.grey[400],
-                              size: 20,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(left: 5),
-                              child: Text(
-                                "Comments",
-                                style: TextStyle(color: Colors.grey),
-                              ),
-                            ),
-                            Spacer(),
-                            Icon(
-                              Icons.share,
-                              color: Colors.grey[400],
-                              size: 20,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(left: 5),
-                              child: Text(
-                                "Shares",
-                                style: TextStyle(color: Colors.grey),
-                              ),
-                            ),
-                          ]),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Material(
-                    elevation: 5.0,
-                    borderRadius: BorderRadius.circular(5),
-                    child: Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: Column(
-                        children: <Widget>[
-                          Row(children: <Widget>[
-                            Image.asset(
-                              "assets/usericon.png",
-                              height: 40,
-                              width: 40,
+                  padding: const EdgeInsets.only(
+                      left: 10, right: 10, top: 5, bottom: 5),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => DetailPost()));
+                    },
+                    child: Material(
+                      elevation: 3,
+                      borderRadius: BorderRadius.circular(5),
+                      child: Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Column(
+                          children: <Widget>[
+                            Row(children: <Widget>[
+                              Image.asset(
+                                "assets/usericon.png",
+                                height: 40,
+                                width: 40,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(left: 10),
+                                child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text(
+                                        "Dhiyo Reksa",
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text("1 min ago")
+                                    ]),
+                              ),
+                              Spacer(),
+                              Icon(
+                                Icons.bookmark,
+                                color: Colors.grey[400],
+                              ),
+                            ]),
+                            Padding(
+                              padding: EdgeInsets.only(top: 10),
+                              child: Image.asset("assets/flutter.png"),
                             ),
                             Padding(
-                              padding: EdgeInsets.only(left: 10),
-                              child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Text(
-                                      "Dhiyo Reksa",
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.bold,
-                                      ),
+                              padding: EdgeInsets.only(top: 10),
+                              child: Row(children: <Widget>[
+                                Icon(
+                                  Icons.favorite,
+                                  size: 20,
+                                  color: Colors.red,
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 5),
+                                  child: Text(
+                                    "125",
+                                    style: TextStyle(
+                                      color: Colors.grey,
                                     ),
-                                    Text("1 min ago")
-                                  ]),
+                                  ),
+                                ),
+                                Spacer(),
+                                Text(
+                                  "4 comments",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 10),
+                                  child: Text(
+                                    "2 shares",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ),
+                              ]),
                             ),
-                            Spacer(),
-                            Icon(
-                              Icons.bookmark,
-                              color: Colors.grey[400],
+                            Divider(
+                              height: 20.0,
+                              color: Colors.grey,
                             ),
-                          ]),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10),
-                            child: Image.asset("assets/flutter.png"),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10),
-                            child: Row(children: <Widget>[
+                            Row(children: <Widget>[
                               Icon(
                                 Icons.favorite,
+                                color: Colors.grey[400],
                                 size: 20,
-                                color: Colors.red,
                               ),
                               Padding(
                                 padding: EdgeInsets.only(left: 5),
                                 child: Text(
-                                  "125",
-                                  style: TextStyle(
-                                    color: Colors.grey,
-                                  ),
+                                  "Likes",
+                                  style: TextStyle(color: Colors.grey),
                                 ),
                               ),
                               Spacer(),
-                              Text(
-                                "4 comments",
-                                style: TextStyle(color: Colors.grey),
+                              Icon(
+                                Icons.add_comment,
+                                color: Colors.grey[400],
+                                size: 20,
                               ),
                               Padding(
-                                padding: EdgeInsets.only(left: 10),
+                                padding: EdgeInsets.only(left: 5),
                                 child: Text(
-                                  "2 shares",
-                                  style: TextStyle(
-                                    color: Colors.grey,
-                                  ),
+                                  "Comments",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
+                              ),
+                              Spacer(),
+                              Icon(
+                                Icons.share,
+                                color: Colors.grey[400],
+                                size: 20,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(left: 5),
+                                child: Text(
+                                  "Shares",
+                                  style: TextStyle(color: Colors.grey),
                                 ),
                               ),
                             ]),
-                          ),
-                          Divider(
-                            height: 20.0,
-                            color: Colors.grey,
-                          ),
-                          Row(children: <Widget>[
-                            Icon(
-                              Icons.favorite,
-                              color: Colors.grey[400],
-                              size: 20,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(left: 5),
-                              child: Text(
-                                "Likes",
-                                style: TextStyle(color: Colors.grey),
-                              ),
-                            ),
-                            Spacer(),
-                            Icon(
-                              Icons.add_comment,
-                              color: Colors.grey[400],
-                              size: 20,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(left: 5),
-                              child: Text(
-                                "Comments",
-                                style: TextStyle(color: Colors.grey),
-                              ),
-                            ),
-                            Spacer(),
-                            Icon(
-                              Icons.share,
-                              color: Colors.grey[400],
-                              size: 20,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(left: 5),
-                              child: Text(
-                                "Shares",
-                                style: TextStyle(color: Colors.grey),
-                              ),
-                            ),
-                          ]),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   ),
