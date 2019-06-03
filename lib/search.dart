@@ -78,14 +78,16 @@ class _SearchState extends State<Search> {
                       borderRadius: BorderRadius.circular(5),
                       child: Column(
                         children: <Widget>[
-                          ClipRRect(
-                            borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(5),
-                                topRight: Radius.circular(5)),
-                            child: Image.asset(
-                              "assets/flutter.png",
-                              height: 125,
-                              fit: BoxFit.cover,
+                          Expanded(
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(5),
+                                  topRight: Radius.circular(5)),
+                              child: Image.asset(
+                                "assets/flutter.png",
+                                height: 125,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                           Padding(
@@ -140,14 +142,16 @@ class _SearchState extends State<Search> {
                       borderRadius: BorderRadius.circular(5),
                       child: Column(
                         children: <Widget>[
-                          ClipRRect(
-                            borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(5),
-                                topRight: Radius.circular(5)),
-                            child: Image.asset(
-                              "assets/flutter.png",
-                              height: 137,
-                              fit: BoxFit.cover,
+                          Expanded(
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(5),
+                                  topRight: Radius.circular(5)),
+                              child: Image.asset(
+                                "assets/flutter.png",
+                                height: 137,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                           Padding(
@@ -202,14 +206,16 @@ class _SearchState extends State<Search> {
                       borderRadius: BorderRadius.circular(5),
                       child: Column(
                         children: <Widget>[
-                          ClipRRect(
-                            borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(5),
-                                topRight: Radius.circular(5)),
-                            child: Image.asset(
-                              "assets/flutter.png",
-                              height: 137,
-                              fit: BoxFit.cover,
+                          Expanded(
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(5),
+                                  topRight: Radius.circular(5)),
+                              child: Image.asset(
+                                "assets/flutter.png",
+                                height: 137,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                           Padding(
@@ -264,14 +270,16 @@ class _SearchState extends State<Search> {
                       borderRadius: BorderRadius.circular(5),
                       child: Column(
                         children: <Widget>[
-                          ClipRRect(
-                            borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(5),
-                                topRight: Radius.circular(5)),
-                            child: Image.asset(
-                              "assets/flutter.png",
-                              height: 137,
-                              fit: BoxFit.cover,
+                          Expanded(
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(5),
+                                  topRight: Radius.circular(5)),
+                              child: Image.asset(
+                                "assets/flutter.png",
+                                height: 137,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                           Padding(
@@ -326,14 +334,16 @@ class _SearchState extends State<Search> {
                       borderRadius: BorderRadius.circular(5),
                       child: Column(
                         children: <Widget>[
-                          ClipRRect(
-                            borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(5),
-                                topRight: Radius.circular(5)),
-                            child: Image.asset(
-                              "assets/flutter.png",
-                              height: 137,
-                              fit: BoxFit.cover,
+                          Expanded(
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(5),
+                                  topRight: Radius.circular(5)),
+                              child: Image.asset(
+                                "assets/flutter.png",
+                                height: 137,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                           Padding(
@@ -388,14 +398,16 @@ class _SearchState extends State<Search> {
                       borderRadius: BorderRadius.circular(5),
                       child: Column(
                         children: <Widget>[
-                          ClipRRect(
-                            borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(5),
-                                topRight: Radius.circular(5)),
-                            child: Image.asset(
-                              "assets/flutter.png",
-                              height: 137,
-                              fit: BoxFit.cover,
+                          Expanded(
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(5),
+                                  topRight: Radius.circular(5)),
+                              child: Image.asset(
+                                "assets/flutter.png",
+                                height: 137,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                           Padding(

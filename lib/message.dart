@@ -215,22 +215,22 @@ class _MessageState extends State<Message> {
                       ),
                     ),
                   ),
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: <Widget>[
+                        FloatingActionButton(
+                          onPressed: () {},
+                          child: Icon(Icons.add),
+                          backgroundColor: Colors.orange,
+                        ),
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: <Widget>[
-                  FloatingActionButton(
-                    onPressed: () {},
-                    child: Icon(Icons.add),
-                    backgroundColor: Colors.orange,
-                  ),
-                ],
-              ),
-            )
           ],
         ),
       ),
